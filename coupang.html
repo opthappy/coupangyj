@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>쿠팡 바로가기</title>
+
+  <!-- 홈화면 아이콘 (192px 하나만) -->
+  <link rel="apple-touch-icon" href="./icons/coupang-red-192.png">
+  <link rel="icon" sizes="192x192" href="./icons/coupang-red-192.png">
+
+  <style>
+    body {
+      margin:0;
+      height:100%;
+      background:#f0f4f8;
+      font-family:system-ui,-apple-system,"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    }
+
+    /* 화면 높이의 35% 지점에 배치 (조절 가능) */
+    main {
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      text-align:center;
+      width:100%;
+      max-width:90%;
+    }
+
+    h1 { margin:0 0 20px; font-size:22px; }
+
+    button {
+      padding:24px 40px;
+      font-size:22px; font-weight:700;
+      color:#fff; background:#1976d2;
+      border:0; border-radius:16px; cursor:pointer;
+      box-shadow:0 6px 18px rgba(0,0,0,.18);
+    }
+
+    p { margin:14px 0 0; font-size:16px; color:#333; opacity:.9; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>감사합니다 💟</h1>
+    <button onclick="goOriginal()">쿠팡 바로가기</button>
+    <p>버튼을 눌러 쿠팡으로 이동합니다.</p>
+    <p>이 포스트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받고 있습니다.</p>
+  </main>
+
+  <script>
+    function goOriginal(){
+      location.href = "https://link.coupang.com/a/cNhUoG"; // 원하는 URL 넣기
+    }
+  </script>
+</body>
+</html>
